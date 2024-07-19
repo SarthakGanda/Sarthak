@@ -4,65 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <style>
-        .hi {
-            text-align: center;
-            font-family: cursive;
-        }
-    </style>
+    <title>Document</title>
     <script>
+        function hom() {
+            document.getElementById("home").style.display = "block";
+            document.getElementById("news").style.display = "none";
+            document.getElementById("contact").style.display = "none";
+        }
+
+        function newss() {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("news").style.display = "block";
+            document.getElementById("contact").style.display = "none";
+        }
+
+        function cont() {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("news").style.display = "none";
+            document.getElementById("contact").style.display = "block";
+        }
 
     </script>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+
+        p {
+            margin: 20px;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="dv" style="border: 1px double black;">
-        <h1 class="hi">Sarthak Ganda</h1>
-        <h5 class="hi">software engineer</h5>
+<body id="coloo" style="color: white; background-color: #111;">
+    <div>
+        <b><u>
+                <h1 style="text-align: center;">Uchiha Clan</h1>
+            </u></b>
     </div>
-    <div style="border: 1px solid black;height: 1000px;width: 20%;float: left;">
-        <h3 class="hi">ABOUT</h3>
-        <article style="margin-left: 5px;margin-right: 5px;text-align: left;" class="hi">I am Sarthak Ganda I am
-            purswing my cource Bachrlor's in Computer Applications in Christ University Delhi Campus. I have compeleted
-            my 1st year on 3rd May 2024.</article>
-    </div>
-    <div style="float: left;width: 79%;height: 1000px;border: 1px solid black;">
-        <div style="float: left;width: 49%;">
-            <section>
-                <h4 class="hi">CONTACT</h4>
-                <ul>
-                    <li>Phone Number : 8178848820</li>
-                    <li>Email : sarthak.ganda@bcah.christunicersity.in</li>
-                </ul>
-            </section>
-            <section>
-                <h4 class="hi">SKILLS</h4>
-                <ul>
-                    <li>
-                        Python
-                    </li>
-                    <li>C/C++</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </section>
-            <section>
-                <h4 class="hi">EDUCATION</h4>
-                <ul>
-                    <li>CLASS X - INDIRAPURAM PUBLIC SCHOOL - 45%</li>
-                    <li>CLASS XII - INDIRAPURAM PUBLIC SCHOOL - 80%</li>
-                    <li>BCA - CHRIST UNIVERSITY DELHI CAMPUS - ON GOING</li>
-                </ul>
-            </section>
-            <section>
-                <h4 class="hi">WORK EXPERIENCE</h4>
-                <ul>
-                    <li>NONE</li>
-                </ul>
-            </section>
+    <ul>
+        <li><a href="#home" onclick="hom()">Home</a></li>
+        <li><a href="#news" onclick="newss()">News</a></li>
+        <li><a href="#contact" onclick="cont()">Contact</a></li>
+    </ul>
+    <section id="#home">
+        <div style="display: block;" id="home">
+            <img src="download.jpeg" alt="" style="float: right; margin : 75px">
+            <p style="float: right; margin: 75px ; max-width: 750px;">
+                The Uchiha Clan: Legacy, Power, and Tragedy
+
+                The Uchiha Clan stands as one of the most iconic and enigmatic families in the shinobi world of Naruto.
+                Renowned for their exceptional talent, powerful abilities, and tragic history, the Uchiha Clan has left
+                an indelible mark on the narrative of both the Naruto series and its fans worldwide.
+
+                The history of the Uchiha Clan is steeped in legend and lore. Hailing from the Hidden Leaf Village
+                (Konohagakure), they were known for their prowess in battle and their unique ability: the Sharingan.
+                This special doujutsu, or eye technique, granted its wielders heightened perception, the ability to see
+                chakra, and eventually evolved into even more powerful forms, such as the Mangekyo Sharingan and the
+                Rinnegan.
+            </p>
+
+    </section>
+    <section name="#news">
+        <div>
+            <p style="margin: 100px; display: none;" id="news">
+                Certainly! The Uchiha clan, a prominent family in the Naruto series known for their powerful Sharingan
+                abilities, faced tragic losses primarily due to internal conflicts and external threats. Here are some
+                of the main members of the Uchiha clan who were killed and the circumstances surrounding their deaths:
+
+                <b>Shisui Uchiha:</b>
+                Shisui was a highly skilled shinobi known as "Shisui of the Body Flicker
+                ding" due to his incredible speed. He was renowned for his mastery of the Kotoamatsukami genjutsu.
+                Shisui's death was shrouded in mystery for a time, but it was eventually revealed that he committed
+                suicide by using his Mangekyo Sharingan to entrust his remaining eye to Itachi Uchiha, his close friend
+                and fellow clan member. Shisui's death played a significant role in the events leading up to the Uchiha
+                clan massacre.
+
+                <b>Itachi Uchiha:</b>
+
+                Itachi was a prodigy of the Uchiha clan and possessed the Mangekyo Sharingan, allowing him access to
+                powerful techniques like Amaterasu and Tsukuyomi. Due to his advanced skills, he was tasked by Konoha's
+                leadership to infiltrate the Uchiha clan and prevent a coup d'état they were planning. Reluctantly,
+                Itachi chose to wipe out his entire clan, sparing only his younger brother, Sasuke Uchiha. His actions
+                were driven by a sense of duty and love for his brother, though they left deep scars on Sasuke and the
+                Naruto storyline as a whole.
+                <b>Fugaku Uchiha and Mikoto Uchiha:</b>
+
+                Fugaku and Mikoto were the parents of Sasuke and Itachi. Fugaku was the clan head and a strong advocate
+                for Uchiha's rights within Konoha. Both Fugaku and Mikoto were killed by Itachi during the massacre.
+                Their deaths were a tragic consequence of Itachi's mission and the political tensions within the
+                village.
+                These deaths were pivotal moments in the Naruto series, shaping the characters' motivations and the
+                course of the story's narrative, particularly Sasuke's journey of revenge and redemption.
+            </p>
         </div>
+    </section>
+    <div style="display: none;" id="contact">
+        <h4 style="margin: 100px;float: left;">NAME</h4>
+        <h4 style="margin: 100px;float: left;">Sarthak</h4>
+        <br>
+        <br><br>
+        <h4 style="margin: 100px;float: left;">Email</h4>
+        <h4 style="margin: 100px;float: left;">sarthakganda012@gmail.com</h4>
+
     </div>
 </body>
 
